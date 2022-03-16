@@ -25,15 +25,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    // 1. Take the current value of the view.
-    // 2. Using concatenation, the value of the pressed key is added to the string.
-    // 3. The new value is shown.
-    // "Private" because this function is only needed inside the class.
-    private void addGivenValue(String digit) {
-        String temp = calculTextView.getText().toString();
-        String result = temp + digit;
-        calculTextView.setText(result);
-    }
 
     // "Public" because a reference of the method is used in "activity_main.xml"
     // to execute the code.
@@ -156,7 +147,7 @@ public class MainActivity extends AppCompatActivity {
         firstPart = operation.substring(0, tempPosition);
         secondPart = operation.substring(tempPosition + 1, operation.length());
 
-        // The reason behing choosing doubles instead of integers is because we don't
+        // The reason behind choosing doubles instead of integers is because we don't
         // want to trim the result. Plus, the result has to be accurate to be accepted.
         // Example : 5 / 2 is 2.5 using doubles and 2 using integers.
 
@@ -194,7 +185,6 @@ public class MainActivity extends AppCompatActivity {
         }
 
         //...Then simply trim the result.
-
         if(resultString.charAt(commaPosition + 1) == '0') {
           resultString = resultString.substring(0, commaPosition);
         }
@@ -205,15 +195,21 @@ public class MainActivity extends AppCompatActivity {
         clearCalculTextView();
     }
 
+    // 1. Take the current value of the view.
+    // 2. Using concatenation, the value of the pressed key is added to the string.
+    // 3. The new value is shown.
+    // "Private" because this function is only needed inside the class.
+    private void addGivenValue(String digit) {
+        String temp = calculTextView.getText().toString();
+        String result = temp + digit;
+        calculTextView.setText(result);
+    }
+
     private void clearCalculTextView() {
         calculTextView.setText("");
     }
 
     private void clearResultTextView() {
         resultTextView.setText("");
-    }
-
-    public void printSomething() {
-        System.out.print("Something");
     }
 }

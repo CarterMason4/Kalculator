@@ -136,7 +136,6 @@ public class MainActivity extends AppCompatActivity {
                 positionTimes = i;
                 tempPosition = positionTimes;
                 break;
-
             } else if(operation.charAt(i) == '/') {
                 positionDivide = i;
                 tempPosition = positionDivide;

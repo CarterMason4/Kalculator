@@ -212,4 +212,8 @@ public class MainActivity extends AppCompatActivity {
     private void clearResultTextView() {
         resultTextView.setText("");
     }
+
+    public void printSomething() {
+        System.out.print("Something");
+    }
 }

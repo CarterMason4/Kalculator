@@ -92,6 +92,7 @@ public class MainActivity extends AppCompatActivity {
                 // Result
                 double result = 0.0;
 
+                // Iteration through the string to find where the sign is.
                 for (int i = 0; i < operation.length(); i++) {
                     if (operation.charAt(i) == '+') {
                         positionPlus = i;

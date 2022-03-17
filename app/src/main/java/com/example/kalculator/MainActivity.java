@@ -47,37 +47,22 @@ public class MainActivity extends AppCompatActivity {
         Button nineButton = findViewById(R.id.nineButton);
 
         clearAllButton.setOnClickListener(view -> clearAll());
-
         equalButton.setOnClickListener(view -> makeOperation());
-
         plusButton.setOnClickListener(view -> addGivenValue("+"));
-
         minusButton.setOnClickListener(view -> addGivenValue("-"));
-
         divideButton.setOnClickListener(view -> addGivenValue("/"));
-
         multiplyButton.setOnClickListener(view -> addGivenValue("*"));
-
         dotButton.setOnClickListener(view -> addGivenValue("."));
 
         zeroButton.setOnClickListener(view -> addGivenValue("0"));
-
         oneButton.setOnClickListener(view -> addGivenValue("1"));
-
         twoButton.setOnClickListener(view -> addGivenValue("2"));
-
         threeButton.setOnClickListener(view -> addGivenValue("3"));
-
         fourButton.setOnClickListener(view -> addGivenValue("4"));
-
         fiveButton.setOnClickListener(view -> addGivenValue("5"));
-
         sixButton.setOnClickListener(view -> addGivenValue("6"));
-
         sevenButton.setOnClickListener(view -> addGivenValue("7"));
-
         eightButton.setOnClickListener(view -> addGivenValue("8"));
-
         nineButton.setOnClickListener(view -> addGivenValue("9"));
 
     }

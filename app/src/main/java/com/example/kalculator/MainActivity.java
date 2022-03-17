@@ -127,7 +127,6 @@ public class MainActivity extends AppCompatActivity {
             int positionTimes = 0;
             int positionDivide = 0;
 
-
             // Temporary variable used to store the position of the sign, whatever the sign may be.
             // It is used to separated the left and right part.
             int tempPosition = 0;

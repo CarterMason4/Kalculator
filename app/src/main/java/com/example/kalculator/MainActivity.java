@@ -46,73 +46,39 @@ public class MainActivity extends AppCompatActivity {
         Button eightButton = findViewById(R.id.eightButton);
         Button nineButton = findViewById(R.id.nineButton);
 
-        clearAllButton.setOnClickListener(view -> {
-            clearAll();
-        });
+        clearAllButton.setOnClickListener(view -> clearAll());
 
-        equalButton.setOnClickListener(view -> {
-            makeOperation();
-        });
+        equalButton.setOnClickListener(view -> makeOperation());
 
-        plusButton.setOnClickListener(view -> {
-            addGivenValue("+");
-        });
+        plusButton.setOnClickListener(view -> addGivenValue("+"));
 
-        minusButton.setOnClickListener(view -> {
-            addGivenValue("-");
-        });
+        minusButton.setOnClickListener(view -> addGivenValue("-"));
 
-        divideButton.setOnClickListener(view -> {
-            addGivenValue("/");
-        });
+        divideButton.setOnClickListener(view -> addGivenValue("/"));
 
-        multiplyButton.setOnClickListener(view -> {
-            addGivenValue("*");
-        });
+        multiplyButton.setOnClickListener(view -> addGivenValue("*"));
 
-        dotButton.setOnClickListener(view -> {
-            addGivenValue(".");
-        });
+        dotButton.setOnClickListener(view -> addGivenValue("."));
 
-        zeroButton.setOnClickListener(view -> {
-            addGivenValue("0");
-        });
+        zeroButton.setOnClickListener(view -> addGivenValue("0"));
 
-        oneButton.setOnClickListener(view -> {
-            addGivenValue("1");
-        });
+        oneButton.setOnClickListener(view -> addGivenValue("1"));
 
-        twoButton.setOnClickListener(view -> {
-            addGivenValue("2");
-        });
+        twoButton.setOnClickListener(view -> addGivenValue("2"));
 
-        threeButton.setOnClickListener(view -> {
-            addGivenValue("3");
-        });
+        threeButton.setOnClickListener(view -> addGivenValue("3"));
 
-        fourButton.setOnClickListener(view -> {
-            addGivenValue("4");
-        });
+        fourButton.setOnClickListener(view -> addGivenValue("4"));
 
-        fiveButton.setOnClickListener(view -> {
-            addGivenValue("5");
-        });
+        fiveButton.setOnClickListener(view -> addGivenValue("5"));
 
-        sixButton.setOnClickListener(view -> {
-            addGivenValue("6");
-        });
+        sixButton.setOnClickListener(view -> addGivenValue("6"));
 
-        sevenButton.setOnClickListener(view -> {
-            addGivenValue("7");
-        });
+        sevenButton.setOnClickListener(view -> addGivenValue("7"));
 
-        eightButton.setOnClickListener(view -> {
-            addGivenValue("8");
-        });
+        eightButton.setOnClickListener(view -> addGivenValue("8"));
 
-        nineButton.setOnClickListener(view -> {
-            addGivenValue("9");
-        });
+        nineButton.setOnClickListener(view -> addGivenValue("9"));
 
     }
 

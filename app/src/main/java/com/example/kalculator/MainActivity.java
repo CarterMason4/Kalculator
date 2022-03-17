@@ -135,10 +135,6 @@ public class MainActivity extends AppCompatActivity {
             // Result
             double result = 0.0;
 
-            // Variables used to store the values located left and right of the sign.
-            String firstPart = "";
-            String secondPart = "";
-
             for (int i = 0; i < operation.length(); i++) {
                 if (operation.charAt(i) == '+') {
                     positionPlus = i;
@@ -159,8 +155,9 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
 
-            firstPart = operation.substring(0, tempPosition);
-            secondPart = operation.substring(tempPosition + 1, operation.length());
+            // Variables used to store the values located left and right of the sign.
+            String firstPart = operation.substring(0, tempPosition);
+            String secondPart = operation.substring(tempPosition + 1);
 
             // The reason behind choosing doubles instead of integers is because we don't
             // want to trim the result. Plus, the result has to be accurate to be accepted.
